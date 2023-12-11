@@ -4,6 +4,7 @@
   box-sizing: border-box;
 }
 
+/* media query */
 body {
   /*background-image: url(./assets/assets/bg-mobile.jpg);
   background-repeat: no-repeat;
@@ -13,28 +14,97 @@ body {
   background: url(./assets/assets/bg-mobile.jpg) no-repeat top center / cover; /* shorthand (atalho) */
 }
 
+/* media query */
 body * {
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   color: white; /* cor do texto */
 }
 
 #container {
-  width: 360px;
-  margin: auto;
-  margin: 56px auto 0px;
+  /* id */
+  width: 360px; /* largura */
+  margin: 56px auto 0px; /* espaçamento */
+  padding: 0px 24px; /* espaçamento interno */
 }
 
 #profile {
+  /* id */
   text-align: center;
   padding: 24px;
 }
 
 #profile img {
+  /* id */
   width: 112px;
 }
 
 #profile p {
+  /* id */
   font-weight: 500;
   line-height: 24px;
   margin-top: 8px;
+}
+
+/* links */
+ul {
+  list-style: none; /* remove as bolinhas */
+  display: flex; /* alinha os elementos horizontalmente */
+  flex-direction: column; /* alinha os elementos verticalmente */
+  gap: 16px; /* espaçamento entre os elementos */
+
+  padding: 24px 0px; /* espaçamento interno */
+}
+
+ul li a {
+  display: flex; /* alinha os elementos horizontalmente */
+  align-items: center; /* alinha os elementos verticalmente */
+  justify-content: center; /* alinha os elementos horizontalmente */
+
+  padding: 16px 24px; /* espaçamento interno */
+
+  background: rgba(255, 255, 255, 0.1); /* cor de fundo */
+  border: 1px solid rgba(255, 255, 255, 0.5); /* borda */
+  border-radius: 8px;
+
+  backdrop-filter: blur(4px); /* desfoque */
+  -webkit-backdrop-filter: blur(4px); /* desfoque para o safari */
+
+  text-decoration: none; /* remove o sublinhado */
+  font-weight: 500; /* negrito */
+  transition: background 0.2s;
+}
+
+/*pseudo-selector*/
+ul li a:hover {
+  background-color: rgba(255, 255, 255, 0.05); /* cor de fundo */
+  border: 1.5px solid white; /* borda */
+}
+
+/*social-links*/
+#social-links {
+  display: flex; /* alinha os elementos horizontalmente */
+  justify-content: center; /* alinha os elementos horizontalmente */
+
+  padding: 24px 0px; /* espaçamento interno */
+  font-size: 24px; /* tamanho da fonte */
+}
+
+#social-links a {
+  display: flex; /* alinha os elementos horizontalmente */
+  align-items: center; /* alinha os elementos verticalmente */
+  justify-content: center; /* alinha os elementos horizontalmente */
+
+  transition: background 0.1s; /* transição de cor de fundo */
+  padding: 16px; /* espaçamento interno */
+  border-radius: 50%; /* borda */
+}
+
+#social-links a:hover {
+  background: rgba(255, 255, 255, 0.2); /* cor de fundo */
+  padding: 16px; /* espaçamento interno */
+}
+
+footer {
+  padding: 24px 0;
+  text-align: center;
 }
